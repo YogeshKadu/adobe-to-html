@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobr JSON to HTML</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body></body>
+<script>
+    //#region Start JSONData
+    const JSONData = {
+        version: {
+            json_export: "200",
+            page_segmentation: "5",
+            schema: "1.1.0",
+            structure: "1.1076.0",
+            table_structure: "5",
+        },
+        extended_metadata: {
+            ID_instance:
+                "32 41 20 43 39 20 34 38 20 30 46 20 34 44 20 46 39 20 31 45 20 41 41 20 44 32 20 36 39 20 39 42 20 32 37 20 43 31 20 32 36 20 45 36 20 46 33 20 ",
+            ID_permanent:
+                "32 35 20 33 30 20 35 35 20 41 39 20 32 44 20 42 39 20 42 32 20 31 31 20 30 41 20 30 30 20 36 37 20 34 35 20 38 42 20 36 42 20 43 36 20 32 33 20 ",
+            has_acroform: true,
+            has_embedded_files: false,
+            is_XFA: false,
+            is_certified: false,
+            is_encrypted: false,
+            is_signed: true,
+            language: "en-US",
+            page_count: 15,
+            pdf_version: "2.0",
+            pdfa_compliance_level: "",
+            pdfua_compliance_level: "",
+        },
+        elements: [
+            {
+                Bounds: [
+                    126.14999389648438, 215.8300018310547, 557.1000061035156,
+                    592.8800048828125,
+                ],
+                Page: 0,
+                Path: "//Document/Watermark",
+            },
+            {
+                Bounds: [
+                    126.02000427246094, 714.9073638916016, 136.5500030517578,
+                    727.6697235107422,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: false,
+                    monospaced: false,
+                    name: "Times New Roman",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Page: 0,
+                Path: "//Document/L/LI/Lbl",
+                Text: "* ",
+                TextSize: 14.039993286132812,
+            },
+            {
+                Bounds: [
+                    162.0185546875, 714.9073638916016, 517.9045867919922,
+                    727.4450836181641,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: false,
+                    monospaced: false,
+                    name: "Times New Roman,Bold",
+                    subset: false,
+                    weight: 700,
+                },
+                HasClip: false,
+                Page: 0,
+                Path: "//Document/L/LI/LBody",
+                Text: "IN THE  HIGH  COURT  OF DELHI AT  NEW  DELHI ",
+                TextSize: 14.039993286132812,
+            },
+            {
+                Bounds: [
+                    126.02000427246094, 714.9073638916016, 517.9045867919922,
+                    727.6697235107422,
+                ],
+                Lang: "en",
+                Page: 0,
+                Path: "//Document/L/LI",
+                attributes: { LineHeight: 16.875, SpaceAfter: 7.25 },
+            },
+            {
+                Bounds: [
+                    126.02000427246094, 714.9073638916016, 517.9045867919922,
+                    727.6697235107422,
+                ],
+                Page: 0,
+                Path: "//Document/L",
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 586.2673645019531, 512.0977935791016,
+                    599.0437622070312,
+                ],
+                Page: 13,
+                Path: "//Document/Figure",
+                attributes: {
+                    BBox: [
+                        196.91199999999662, 586.3299999999872, 508.53899999998976,
+                        596.8899999999849,
+                    ],
+                    Placement: "Block",
+                },
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 586.2673645019531, 512.0977935791016,
+                    599.0437622070312,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Page: 13,
+                Path: "//Document/Figure",
+                Text: "Tender No ....................... Date of opening ............... ",
+                TextSize: 14.039993286132812,
+                attributes: {
+                    BBox: [
+                        196.91199999999662, 586.3299999999872, 508.53899999998976,
+                        596.8899999999849,
+                    ],
+                    Placement: "Block",
+                },
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 570.1915588378906, 319.53611755371094,
+                    582.9679565429688,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 13,
+                Path: "//Document/P[25]",
+                Text: "Time ............. Hours. ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.875, SpaceAfter: 15.375 },
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 537.8855133056641, 474.4946746826172,
+                    550.6619262695312,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 13,
+                Path: "//Document/P[26]",
+                Text: "Name of the Firm ................................................. ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.875, SpaceAfter: 15.375 },
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 505.7198791503906, 510.2626647949219,
+                    518.4962768554688,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 13,
+                Path: "//Document/P[27]",
+                Text: "(Note - All details required only for the items tendered) ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.875, SpaceAfter: 15.375 },
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 216.15892028808594, 512.6481628417969,
+                    486.3306427001953,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            196.97000122070312, 473.5542449951172, 211.07037353515625,
+                            486.3306427001953,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI/Lbl",
+                        Text: "1. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            237.53155517578125, 473.5542449951172, 493.3782653808594,
+                            486.3306427001953,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI/LBody",
+                        Text: "Name & Complete Postal address of the firm ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 473.5542449951172, 493.3782653808594,
+                            486.3306427001953,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 457.4784393310547, 211.0521240234375,
+                            470.2548370361328,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[2]/Lbl",
+                        Text: "2. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            234.0496368408203, 457.4784393310547, 473.44557189941406,
+                            470.2548370361328,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[2]/LBody",
+                        Text: "Telephone, Fax No. Office/Factory/Works ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 457.4784393310547, 473.44557189941406,
+                            470.2548370361328,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[2]",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 441.4026336669922, 211.0521240234375,
+                            454.1790466308594,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[3]/Lbl",
+                        Text: "3. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            234.0496368408203, 441.4026336669922, 322.80079650878906,
+                            454.1790466308594,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[3]/LBody",
+                        Text: "E-mail address ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 441.4026336669922, 322.80079650878906,
+                            454.1790466308594,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[3]",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 425.32684326171875, 211.0521240234375,
+                            438.1032409667969,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[4]/Lbl",
+                        Text: "4. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            234.0496368408203, 425.32684326171875, 451.3748016357422,
+                            438.1032409667969,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[4]/LBody",
+                        Text: "Location of the manufacturing factory ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 425.32684326171875, 451.3748016357422,
+                            438.1032409667969,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[4]",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 409.25103759765625, 211.0521240234375,
+                            422.0274353027344,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[5]/Lbl",
+                        Text: "5. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            233.68460083007812, 393.1752471923828, 512.2383117675781,
+                            422.0274353027344,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[5]/LBody",
+                        Text: "Details of Industrial Licence (if any) wherever required as per statutory regulations ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 393.1752471923828, 512.2383117675781,
+                            422.0274353027344,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[5]",
+                        attributes: { LineHeight: 16.125, SpaceAfter: 16.25 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 360.9955596923828, 211.0521240234375,
+                            373.77195739746094,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[6]/Lbl",
+                        Text: "6. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            233.68460083007812, 328.8439636230469, 512.6481628417969,
+                            373.77195739746094,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[6]/LBody",
+                        Text: "Brief description of plant & machinery erected and functioning in each Deptt. (Monographs & description pamphlets be supplied if available). ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 328.8439636230469, 512.6481628417969,
+                            373.77195739746094,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[6]",
+                        attributes: {
+                            LineHeight: 16.125,
+                            SpaceAfter: 16.125,
+                            TextAlign: "Justify",
+                        },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 296.6783142089844, 211.1912384033203,
+                            309.45472717285156,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[7]/Lbl",
+                        Text: "7. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            233.68460083007812, 280.60252380371094, 512.0977935791016,
+                            309.45472717285156,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[7]/LBody",
+                        Text: "Flow sheet of the process of manufacture of Forklift machines ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 280.60252380371094, 512.0977935791016,
+                            309.45472717285156,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[7]",
+                        attributes: { LineHeight: 16.125, SpaceAfter: 16.125 },
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 248.43687438964844, 211.0521240234375,
+                            261.2132873535156,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[8]/Lbl",
+                        Text: "8. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            233.68460083007812, 232.361083984375, 512.1679992675781,
+                            261.2132873535156,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[8]/LBody",
+                        Text: "Production capacity of Forklift Machine quoted for, with the existing plant & machinery ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.97000122070312, 232.361083984375, 512.1679992675781,
+                            261.2132873535156,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[8]",
+                        attributes: { LineHeight: 16.125 },
+                    },
+                    {
+                        Bounds: [
+                            342.0733947753906, 216.15892028808594, 392.33660888671875,
+                            228.93531799316406,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[9]/LBody",
+                        Text: "Monthly ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            342.0733947753906, 216.15892028808594, 392.33660888671875,
+                            228.93531799316406,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[8]/LI[9]",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                ],
+                Page: 13,
+                Path: "//Document/L[8]",
+            },
+            {
+                Bounds: [
+                    450.1112060546875, 216.15892028808594, 494.0985107421875,
+                    228.93531799316406,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 13,
+                Path: "//Document/P[28]",
+                Text: "Annual ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.875, SpaceAfter: 18 },
+            },
+            {
+                Bounds: [
+                    234.0636749267578, 183.97923278808594, 329.6058807373047,
+                    212.85952758789062,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            234.0636749267578, 200.08311462402344, 255.16580200195312,
+                            212.85952758789062,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[9]/LI/Lbl",
+                        Text: "8.1 ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            270.06224060058594, 200.08311462402344, 316.4223175048828,
+                            212.85952758789062,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[9]/LI/LBody",
+                        Text: "Normal ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            234.0636749267578, 200.08311462402344, 316.4223175048828,
+                            212.85952758789062,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[9]/LI",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                    {
+                        Bounds: [
+                            234.0636749267578, 183.97923278808594, 255.16580200195312,
+                            196.75564575195312,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[9]/LI[2]/Lbl",
+                        Text: "8.2 ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            270.06224060058594, 183.97923278808594, 329.6058807373047,
+                            196.75564575195312,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[9]/LI[2]/LBody",
+                        Text: "Maximum ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            234.0636749267578, 183.97923278808594, 329.6058807373047,
+                            196.75564575195312,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[9]/LI[2]",
+                        attributes: { LineHeight: 16.875 },
+                    },
+                ],
+                Page: 13,
+                Path: "//Document/L[9]",
+            },
+            {
+                Bounds: [
+                    196.98403930664062, 103.58619689941406, 512.4136962890625,
+                    180.67984008789062,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            196.98403930664062, 167.9034423828125, 211.066162109375,
+                            180.67984008789062,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[10]/LI/Lbl",
+                        Text: "9. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            233.69863891601562, 135.75184631347656, 512.4136962890625,
+                            180.67984008789062,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[10]/LI/LBody",
+                        Text: "Brief details of arrangement for quality control of products such a laboratory, testing Equipment etc. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.98403930664062, 135.75184631347656, 512.4136962890625,
+                            180.67984008789062,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[10]/LI",
+                        attributes: {
+                            LineHeight: 16.125,
+                            SpaceAfter: 15.375,
+                            TextAlign: "Justify",
+                        },
+                    },
+                    {
+                        Bounds: [
+                            196.98403930664062, 103.58619689941406, 218.2814483642578,
+                            116.36259460449219,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[10]/LI[2]/Lbl",
+                        Text: "10. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            237.54559326171875, 103.58619689941406, 490.2094421386719,
+                            116.36259460449219,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 13,
+                        Path: "//Document/L[10]/LI[2]/LBody",
+                        Text: "Organization chart of bidder to be enclosed. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            196.98403930664062, 103.58619689941406, 490.2094421386719,
+                            116.36259460449219,
+                        ],
+                        Lang: "en",
+                        Page: 13,
+                        Path: "//Document/L[10]/LI[2]",
+                        attributes: { LineHeight: 16.875, SpaceAfter: 18 },
+                    },
+                ],
+                Page: 13,
+                Path: "//Document/L[10]",
+            },
+            {
+                Bounds: [
+                    126.14999389648438, 215.8300018310547, 557.1000061035156,
+                    592.8800048828125,
+                ],
+                Page: 14,
+                Path: "//Document/Watermark[15]",
+            },
+            {
+                Bounds: [
+                    196.97000122070312, 666.6799621582031, 512.3786010742188,
+                    727.6837615966797,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: true,
+                    monospaced: false,
+                    name: "Times New Roman,Italic",
+                    subset: false,
+                    weight: 400,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 14,
+                Path: "//Document/P[29]",
+                Text: "11. Whether the Forklift machines are tested to any standard specification such as ISO, CE, if so, copies of specimen test certificates should be submitted. ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.125, SpaceAfter: 15.375 },
+            },
+            {
+                Bounds: [
+                    220.5993194580078, 634.4862365722656, 512.5189971923828,
+                    650.1548767089844,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            220.5993194580078, 634.5143127441406, 500.90782165527344,
+                            647.0520324707031,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,BoldItalic",
+                            subset: false,
+                            weight: 700,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/H2[2]",
+                        Text: "(Signature and seal of the manufacturer/Bidder)",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            501.2027587890625, 634.4862365722656, 512.5189971923828,
+                            650.1548767089844,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: true,
+                            encoding: "Identity-H",
+                            family_name: "Times New Roman",
+                            font_type: "CIDFontType2",
+                            italic: true,
+                            monospaced: false,
+                            name: "Times New Roman,Italic",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/H2[2]/Span",
+                        Text: "\u201d ",
+                        TextSize: 14.039993286132812,
+                    },
+                ],
+                Lang: "en",
+                Page: 14,
+                Path: "//Document/H2[2]",
+                attributes: { LineHeight: 16.875, SpaceAfter: 8 },
+            },
+            {
+                Bounds: [
+                    125.40812683105469, 336.88035583496094, 560.9485778808594,
+                    615.1250762939453,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            125.40812683105469, 602.3627166748047, 146.70977783203125,
+                            615.1250762939453,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI/Lbl",
+                        Text: "22. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            126.0118408203125, 481.61871337890625, 560.9485778808594,
+                            615.1250762939453,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI/LBody",
+                        Text: "A cumulative reading of Clauses 2.1, 5.4 along with Annexures-10 & 11 of the NIT only shows that the manufacturer has to show that it has supplied a machine which has been successfully installed. Similarly, Annexure-14 also requires the certificate to be given by the manufacturer. The Petitioner has established that it has fulfilled the eligibility criteria and, therefore, their bid ought not to have been rejected. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            125.40812683105469, 481.61871337890625, 560.9485778808594,
+                            615.1250762939453,
+                        ],
+                        Lang: "en",
+                        Page: 14,
+                        Path: "//Document/L[11]/LI",
+                        attributes: { LineHeight: 24.125, TextAlign: "Justify" },
+                    },
+                    {
+                        Bounds: [
+                            125.40812683105469, 457.4980010986328, 146.70977783203125,
+                            470.26036071777344,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[2]/Lbl",
+                        Text: "23. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            126.0118408203125, 409.2565612792969, 560.9233093261719,
+                            470.26036071777344,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[2]/LBody",
+                        Text: "During the course of the hearing, this Court had directed the Respondent No.1 to open the financial bid of the Petitioner also and it transpires that the Petitioner is the lowest bidder. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            125.40812683105469, 409.2565612792969, 560.9233093261719,
+                            470.26036071777344,
+                        ],
+                        Lang: "en",
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[2]",
+                        attributes: {
+                            LineHeight: 24.125,
+                            SpaceAfter: 18,
+                            TextAlign: "Justify",
+                        },
+                    },
+                    {
+                        Bounds: [
+                            125.40812683105469, 385.1358337402344, 146.70977783203125,
+                            397.898193359375,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[3]/Lbl",
+                        Text: "24. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            126.0118408203125, 336.88035583496094, 560.8994293212891,
+                            397.898193359375,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[3]/LBody",
+                        Text: "In view of the above, the writ petition is allowed, along with pending application(s), if any. The Respondents are directed to proceed ahead in accordance with law. ",
+                        TextSize: 14.039993286132812,
+                    },
+                    {
+                        Bounds: [
+                            125.40812683105469, 336.88035583496094, 560.8994293212891,
+                            397.898193359375,
+                        ],
+                        Lang: "en",
+                        Page: 14,
+                        Path: "//Document/L[11]/LI[3]",
+                        attributes: {
+                            LineHeight: 24.125,
+                            SpaceAfter: 18,
+                            TextAlign: "Justify",
+                        },
+                    },
+                ],
+                Page: 14,
+                Path: "//Document/L[11]",
+            },
+            {
+                Bounds: [
+                    341.1046447753906, 288.4002380371094, 560.7744750976562,
+                    300.9379577636719,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: false,
+                    monospaced: false,
+                    name: "Times New Roman,Bold",
+                    subset: false,
+                    weight: 700,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 14,
+                Path: "//Document/P[30]",
+                Text: "SATISH CHANDRA SHARMA, CJ ",
+                TextSize: 14.039993286132812,
+                attributes: {
+                    LineHeight: 16.875,
+                    SpaceAfter: 18,
+                    TextAlign: "End",
+                },
+            },
+            {
+                Bounds: [
+                    372.5402069091797, 215.92576599121094, 560.6761932373047,
+                    228.46348571777344,
+                ],
+                Font: {
+                    alt_family_name: "Times New Roman",
+                    embedded: false,
+                    encoding: "WinAnsiEncoding",
+                    family_name: "Times New Roman",
+                    font_type: "TrueType",
+                    italic: false,
+                    monospaced: false,
+                    name: "Times New Roman,Bold",
+                    subset: false,
+                    weight: 700,
+                },
+                HasClip: false,
+                Lang: "en",
+                Page: 14,
+                Path: "//Document/P[31]",
+                Text: "SUBRAMONIUM PRASAD, J ",
+                TextSize: 14.039993286132812,
+                attributes: { LineHeight: 16.875, TextAlign: "End" },
+            },
+            {
+                Bounds: [
+                    126.0118408203125, 183.98475646972656, 218.61415100097656,
+                    212.35960388183594,
+                ],
+                Kids: [
+                    {
+                        Bounds: [
+                            126.0118408203125, 199.82188415527344, 218.61415100097656,
+                            212.35960388183594,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman,Bold",
+                            subset: false,
+                            weight: 700,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/P[32]/Sub",
+                        Text: "JULY 04, 2023 ",
+                        TextSize: 14.039993286132812,
+                        attributes: { Placement: "Block" },
+                    },
+                    {
+                        Bounds: [
+                            126.0118408203125, 183.98475646972656, 163.7655029296875,
+                            196.7471160888672,
+                        ],
+                        Font: {
+                            alt_family_name: "Times New Roman",
+                            embedded: false,
+                            encoding: "WinAnsiEncoding",
+                            family_name: "Times New Roman",
+                            font_type: "TrueType",
+                            italic: false,
+                            monospaced: false,
+                            name: "Times New Roman",
+                            subset: false,
+                            weight: 400,
+                        },
+                        HasClip: false,
+                        Page: 14,
+                        Path: "//Document/P[32]/Sub[2]",
+                        Text: "hsk/ss ",
+                        TextSize: 14.039993286132812,
+                        attributes: { Placement: "Block" },
+                    },
+                ],
+                Lang: "en",
+                Page: 14,
+                Path: "//Document/P[32]",
+                attributes: { LineHeight: 15.875, SpaceAfter: 18 },
+            },
+        ],
+        pages: [
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 0,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 1,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 2,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 3,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 4,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 5,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 6,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 7,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 8,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 9,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 10,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 11,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 12,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 13,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+            {
+                boxes: {
+                    CropBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                    MediaBox: [0.0, 0.0, 595.4400024414062, 841.6799926757812],
+                },
+                height: 841.6799926757812,
+                is_scanned: false,
+                page_number: 14,
+                rotation: 0,
+                width: 595.4400024414062,
+            },
+        ],
+    };
+
+    const Formatter = {
+        Document: "main",
+        Sect: "section",
+        Aside: "aside",
+        Figure: "figure",
+        Footnote: "footer",
+        H1: "h1",
+        H2: "h2",
+        H3: "h3",
+        H4: "h4",
+        H5: "h5",
+        H6: "h6",
+        P: "p",
+        Reference: "a",
+        ParagraphSpan: "p",
+        StyleSpan: "span",
+        Sub: "span",
+        Span: "span",
+        Table: "table",
+        TD: "td",
+        TH: "th",
+        TR: "tr",
+        Title: "h1",
+        L: "ul",
+        LI: "li",
+        LBody: "",
+        HyphenSpan: "span",
+        Div: "div"
+    };
+    const skipTagBody = ["LBody"];
+    const ignoreTags = ["Watermark", "Lbl"];
+    const styleFormatter = {
+        weight: "font-weight:REPLACEME;",
+        SpaceAfter: "margin-bottom:REPLACEMEpx;",
+        TextDecorationType: "text-decoration:REPLACEME;",
+        TextAlign: "text-align:REPLACEME;",
+        Placement: 'display:REPLACEME;'
+    };
+    //#endregion JSONData
+
+    let HTML_Content = "";
+
+    //#region GP
+    const GetPathArray = (pathString) => {
+        return pathString.split("/").splice(2);
+    };
+    const GetPath = (path) => {
+        return path.split("[")[0];
+    };
+    //#endregion GP
+
+    const Stack = [];
+
+    const RemoveTill = (index) => {
+        while (Stack.length > index) {
+            const lastElement = Stack.pop();
+            HTML_Content += `</${Formatter[GetPath(lastElement)]}>`;
+        }
+    };
+    const ObjectToStyle = (elementStyleObject) => {
+        let styleText = '';
+        const keyList = Object.keys(elementStyleObject);
+        keyList.map((key) => {
+            if (styleFormatter[key]) {
+                styleText += styleFormatter[key].replace('REPLACEME', elementStyleObject[key]().toLowerCase);
+            }
+        });
+        return styleText;
+    }
+    const FormatElement = (element) => {
+        const pathList = GetPathArray(element.Path);
+        pathList.map((path, index) => {
+            if (ignoreTags.includes(path) || (!element.Text && !element.Kids)) return;
+
+            const elementStyle = { ...element.Font, ...element.attributes }
+            // Remove element
+            if (Stack[index] !== path || (index + 1 === pathList.length && Stack.length > index)) {
+                if (Stack[index] !== path) {
+                    RemoveTill(index);
+                } else {
+                    RemoveTill(index + 1);
+                }
+            }
+
+            // Insert new element
+            if (Stack.length <= 0 || Stack.length <= index) {
+                if (!skipTagBody.includes(GetPath(path))) {
+                    HTML_Content += `<${Formatter[GetPath(path)]} style="${ObjectToStyle(elementStyle)}">`;
+                }
+                Stack.push(path);
+            }
+
+            if (element.Kids) {
+                element.Kids.map((ele) => FormatElement(ele));
+            }
+        });
+        if (
+            !ignoreTags.includes(
+                GetPath(pathList[pathList.length - 1])
+            ) &&
+            element.Text
+        ) {
+            console.log(
+                `3. Text inserted - ${element.Text}`
+            );
+            HTML_Content += element.Text;
+        }
+    };
+
+    const Start = () => {
+        JSONData.elements.map((element) => {
+            FormatElement(element);
+        });
+        document.body.innerHTML += HTML_Content;
+    };
+    Start();
+</script>
+
+</html>

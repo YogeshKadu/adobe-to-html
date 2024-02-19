@@ -1,0 +1,673 @@
+{
+    "token": 123,
+    "data": {
+        "elements": [
+            {
+                "Bounds": [
+                    283.49000549316406,
+                    313.3459930419922,
+                    315.4040069580078,
+                    342.1759948730469
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[3]",
+                "attributes": {
+                    "BBox": [
+                        277.54899999999907,
+                        232.22499999999854,
+                        318.46699999998964,
+                        345.25999999999476
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.75,
+                        0.375,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 2,
+                    "Height": 113,
+                    "InlineAlign": "Start",
+                    "RowIndex": 0,
+                    "Width": 40.875
+                }
+            },
+            {
+                "Bounds": [
+                    283.49000549316406,
+                    313.3459930419922,
+                    315.4040069580078,
+                    342.1759948730469
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[3]/P",
+                "Text": "Order No. and date ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.375
+                }
+            },
+            {
+                "Bounds": [
+                    324.07000732421875,
+                    303.0260009765625,
+                    371.41900634765625,
+                    342.1759948730469
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[4]",
+                "attributes": {
+                    "BBox": [
+                        317.86699999999837,
+                        232.22499999999854,
+                        374.625,
+                        345.25999999999476
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.75,
+                        0.375,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 3,
+                    "Height": 113,
+                    "InlineAlign": "Start",
+                    "RowIndex": 0,
+                    "Width": 56.75
+                }
+            },
+            {
+                "Bounds": [
+                    324.07000732421875,
+                    313.2259979248047,
+                    371.41900634765625,
+                    342.1759948730469
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[4]/P",
+                "Text": "Description & quantity of ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.375
+                }
+            },
+            {
+                "Bounds": [
+                    324.07000732421875,
+                    303.0260009765625,
+                    368.3679962158203,
+                    311.21600341796875
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "da",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[4]/P[2]",
+                "Text": "FORKLIFT ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.75
+                }
+            },
+            {
+                "Bounds": [
+                    379.8699951171875,
+                    313.3459930419922,
+                    446.5240020751953,
+                    342.1759948730469
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[5]",
+                "attributes": {
+                    "BBox": [
+                        374.0249999999942,
+                        232.22499999999854,
+                        449.50199999999313,
+                        345.25999999999476
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.75,
+                        0.375,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 4,
+                    "Height": 113,
+                    "InlineAlign": "Start",
+                    "RowIndex": 0,
+                    "Width": 75.5
+                }
+            },
+            {
+                "Bounds": [
+                    379.8699951171875,
+                    313.3459930419922,
+                    446.5240020751953,
+                    342.1759948730469
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[5]/P",
+                "Text": "Date of completion of delivery ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.375,
+                    "TextAlign": "Justify"
+                }
+            },
+            {
+                "Bounds": [
+                    454.8999938964844,
+                    282.38600158691406,
+                    498.2980651855469,
+                    342.1759948730469
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[6]",
+                "attributes": {
+                    "BBox": [
+                        448.9019999999873,
+                        232.22499999999854,
+                        501.3399999999965,
+                        345.25999999999476
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.75,
+                        0.375,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 5,
+                    "Height": 113,
+                    "InlineAlign": "Start",
+                    "RowIndex": 0,
+                    "Width": 52.5
+                }
+            },
+            {
+                "Bounds": [
+                    454.8999938964844,
+                    282.38600158691406,
+                    498.2980651855469,
+                    342.1759948730469
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[6]/P",
+                "Text": "Remarks indicating reasons for late deliveries, if any ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.375
+                }
+            },
+            {
+                "Bounds": [
+                    506.74000549316406,
+                    261.6260070800781,
+                    560.7220001220703,
+                    342.1759948730469
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[7]",
+                "attributes": {
+                    "BBox": [
+                        500.7399999999907,
+                        232.22499999999854,
+                        563.8569999999891,
+                        345.25999999999476
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.75,
+                        0.375,
+                        0.25,
+                        0.625
+                    ],
+                    "ColIndex": 6,
+                    "Height": 113,
+                    "InlineAlign": "Start",
+                    "RowIndex": 0,
+                    "Width": 63.125
+                }
+            },
+            {
+                "Bounds": [
+                    506.74000549316406,
+                    333.9859924316406,
+                    560.7220001220703,
+                    342.1759948730469
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[7]/P",
+                "Text": "Has the ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.75
+                }
+            },
+            {
+                "Bounds": [
+                    506.74000549316406,
+                    323.54600524902344,
+                    553.593994140625,
+                    331.7359924316406
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "da",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[7]/P[2]",
+                "Text": "FORKLIFT/ ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.75
+                }
+            },
+            {
+                "Bounds": [
+                    506.74000549316406,
+                    261.6260070800781,
+                    560.6860046386719,
+                    321.41600036621094
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR/TH[7]/P[3]",
+                "Text": "been satisfactorily commissioned and is it giving trouble free service? ",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.375
+                }
+            },
+            {
+                "Path": "//Document/Table/TR[2]/TD",
+                "attributes": {
+                    "BBox": [
+                        190.67199999999866,
+                        182.90699999999924,
+                        224.87099999999919,
+                        232.9449999999997
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.375,
+                        0.75,
+                        0.625,
+                        0.25
+                    ],
+                    "ColIndex": 0,
+                    "Height": 50,
+                    "InlineAlign": "Start",
+                    "RowIndex": 1,
+                    "Width": 34.25
+                }
+            },
+            {
+                "Path": "//Document/Table/TR[2]/TD[2]",
+                "attributes": {
+                    "BBox": [
+                        224.27099999999336,
+                        182.90699999999924,
+                        278.14899999999034,
+                        232.9449999999997
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.375,
+                        0.75,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 1,
+                    "Height": 50,
+                    "InlineAlign": "Start",
+                    "RowIndex": 1,
+                    "Width": 53.875
+                }
+            },
+            {
+                "Path": "//Document/Table/TR[2]/TD[3]",
+                "attributes": {
+                    "BBox": [
+                        277.54899999999907,
+                        182.90699999999924,
+                        318.46699999998964,
+                        232.9449999999997
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.375,
+                        0.75,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 2,
+                    "Height": 50,
+                    "InlineAlign": "Start",
+                    "RowIndex": 1,
+                    "Width": 40.875
+                }
+            },
+            {
+                "Path": "//Document/Table/TR[2]/TD[4]",
+                "attributes": {
+                    "BBox": [
+                        317.86699999999837,
+                        182.90699999999924,
+                        374.625,
+                        232.9449999999997
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.375,
+                        0.75,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 3,
+                    "Height": 50,
+                    "InlineAlign": "Start",
+                    "RowIndex": 1,
+                    "Width": 56.75
+                }
+            },
+            {
+                "Bounds": [
+                    379.8699951171875,
+                    211.8260040283203,
+                    444.27699279785156,
+                    230.33599853515625
+                ],
+                "Page": 12,
+                "Path": "//Document/Table/TR[2]/TD[5]",
+                "attributes": {
+                    "BBox": [
+                        374.0249999999942,
+                        182.90699999999924,
+                        449.50199999999313,
+                        232.9449999999997
+                    ],
+                    "BlockAlign": "Before",
+                    "BorderColor": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "BorderStyle": "Solid",
+                    "BorderThickness": [
+                        0.375,
+                        0.75,
+                        0.25,
+                        0.25
+                    ],
+                    "ColIndex": 4,
+                    "Height": 50,
+                    "InlineAlign": "Start",
+                    "RowIndex": 1,
+                    "Width": 75.5
+                }
+            },
+            {
+                "Bounds": [
+                    420.6699981689453,
+                    222.14599609375,
+                    444.27699279785156,
+                    230.33599853515625
+                ],
+                "Font": {
+                    "alt_family_name": "Times New Roman",
+                    "embedded": false,
+                    "encoding": "WinAnsiEncoding",
+                    "family_name": "Times New Roman",
+                    "font_type": "TrueType",
+                    "italic": true,
+                    "monospaced": false,
+                    "name": "Times New Roman,Italic",
+                    "subset": false,
+                    "weight": 400
+                },
+                "HasClip": true,
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR[2]/TD[5]/P",
+                "Text": "Actual",
+                "TextSize": 9,
+                "attributes": {
+                    "LineHeight": 10.75
+                }
+            },
+            {
+                "Bounds": [
+                    379.8699951171875,
+                    211.8260040283203,
+                    412.197998046875,
+                    230.21600341796875
+                ],
+                "Kids": [
+                    {
+                        "Bounds": [
+                            379.8699951171875,
+                            222.0260009765625,
+                            412.1260681152344,
+                            230.21600341796875
+                        ],
+                        "Font": {
+                            "alt_family_name": "Times New Roman",
+                            "embedded": false,
+                            "encoding": "WinAnsiEncoding",
+                            "family_name": "Times New Roman",
+                            "font_type": "TrueType",
+                            "italic": true,
+                            "monospaced": false,
+                            "name": "Times New Roman,Italic",
+                            "subset": false,
+                            "weight": 400
+                        },
+                        "HasClip": true,
+                        "Page": 12,
+                        "Path": "//Document/Table/TR[2]/TD[5]/P[2]/Sub",
+                        "Text": "As per ",
+                        "TextSize": 9,
+                        "attributes": {
+                            "Placement": "Block"
+                        }
+                    },
+                    {
+                        "Bounds": [
+                            379.8699951171875,
+                            211.8260040283203,
+                            412.197998046875,
+                            220.01600646972656
+                        ],
+                        "Font": {
+                            "alt_family_name": "Times New Roman",
+                            "embedded": false,
+                            "encoding": "WinAnsiEncoding",
+                            "family_name": "Times New Roman",
+                            "font_type": "TrueType",
+                            "italic": true,
+                            "monospaced": false,
+                            "name": "Times New Roman,Italic",
+                            "subset": false,
+                            "weight": 400
+                        },
+                        "HasClip": true,
+                        "Page": 12,
+                        "Path": "//Document/Table/TR[2]/TD[5]/P[2]/Sub[2]",
+                        "Text": "contract ",
+                        "TextSize": 9,
+                        "attributes": {
+                            "Placement": "Block"
+                        }
+                    }
+                ],
+                "Lang": "en",
+                "Page": 12,
+                "Path": "//Document/Table/TR[2]/TD[5]/P[2]",
+                "attributes": {
+                    "LineHeight": 10.25
+                }
+            }
+        ]
+    }
+}
