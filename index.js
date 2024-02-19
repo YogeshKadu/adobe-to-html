@@ -150,7 +150,7 @@ app.post("/api/json-to-html", function (req, res) {
                 FormatElement(element);
             });
             RemoveTill(0);
-            fs.writeFileSync('index.html', HTML_Content);
+            // fs.writeFileSync('index.html', HTML_Content);
             res.status(200).send(HTML_Content);
         } else {
             res.status(400).send("Invalid token");
