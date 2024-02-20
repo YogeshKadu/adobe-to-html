@@ -33,6 +33,7 @@ const Formatter = {
 };
 const skipTagBody = ["LBody"];
 const ignoreTags = ["Watermark", "Lbl"];
+const ignoreStyle = ["section"];
 const styleFormatter = {
     weight: "font-weight:REPLACEME;",
     SpaceAfter: "margin-bottom:REPLACEMEpx;",
@@ -92,7 +93,12 @@ const FormatElement = (element) => {
             if (!skipTagBody.includes(GetPath(path))) {
                 // const styy = ObjectToStyle(elementStyle);
                 // console.log(`KelementStyle - ${styy}`);
-                HTML_Content += `<${Formatter[GetPath(path)]} style="${ObjectToStyle(elementStyle)}">`;
+                const actualpath = Formatter[GetPath(path)];
+                if (ignoreStyle.includes(actualpath)) {
+                    HTML_Content += `<${Formatter[GetPath(path)]} >`;
+                } else {
+                    HTML_Content += `<${Formatter[GetPath(path)]} style="${ObjectToStyle(elementStyle)}">`;
+                }
             }
             Stack.push(path);
         }
@@ -143,7 +149,6 @@ router.post("/", function (req, res) {
                 FormatElement(element);
             });
             RemoveTill(0);
-            // fs.writeFileSync('index.html', HTML_Content);
             res.status(200).send(HTML_Content);
         } else {
             res.status(400).send("Invalid token");
