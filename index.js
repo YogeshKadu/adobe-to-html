@@ -5,12 +5,12 @@ const dotenv = require("dotenv");
 const paymentRoutes = require("./routes/payment");
 const convertRoutes = require("./routes/convert");
 
-const allowedOrigins = ['http://allowed-host.com'];
+const allowedOrigins = ['https://resumeai-6a4a0.web.app', 'http://localhost:5174'];
 
 dotenv.config();
 
 const corsOptions = {
-    origin: true
+    origin: allowedOrigins
 };
 const port = process.env.PORT || 3000;
 
