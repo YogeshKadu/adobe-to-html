@@ -140,6 +140,7 @@ const FormatElement = (element) => {
 //#endregion Start JSONData
 
 router.post("/", function (req, res) {
+    HTML_Content = "";
     const { token, data } = req.body;
     try {
         if (token === 123) {
