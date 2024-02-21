@@ -3,7 +3,7 @@ const fs = require('fs');
 
 //#region Start JSONData
 const Formatter = {
-    Document: "div",
+    Document: "section",
     Sect: "section",
     Aside: "aside",
     Figure: "figure",
@@ -142,19 +142,19 @@ const FormatElement = (element) => {
 router.post("/", function (req, res) {
     const { token, data } = req.body;
     try {
-        // console.log(data);
         if (token === 123) {
             data.elements.map((element) => {
                 FormatElement(element);
             });
             RemoveTill(0);
-            res.status(200).send(HTML_Content);
-            fs.watchFile('index.html', HTML_Content, err => {
-                if (err) {
-                    console.error(err);
-                }
-            });
+            // fs.watchFile('index.html', HTML_Content, err => {
+            //     if (err) {
+            //         console.error(err);
+            //     }
+            // });
             console.log('request -', new Date());
+
+            res.status(200).send(HTML_Content);
         } else {
             res.status(400).send("Invalid token");
             console.log('Invalid token');
