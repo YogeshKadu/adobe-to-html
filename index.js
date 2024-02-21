@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 const paymentRoutes = require("./routes/payment");
 const convertRoutes = require("./routes/convert");
 
-const allowedOrigins = ['https://resumeai-6a4a0.web.app', 'http://localhost:5173'];
+const allowedOrigins = ['http://localhost:5173'];
 
 dotenv.config();
 

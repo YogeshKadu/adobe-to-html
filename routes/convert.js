@@ -3,7 +3,7 @@ const fs = require('fs');
 
 //#region Start JSONData
 const Formatter = {
-    Document: "main",
+    Document: "div",
     Sect: "section",
     Aside: "aside",
     Figure: "figure",
@@ -95,14 +95,13 @@ const FormatElement = (element) => {
                 // console.log(`KelementStyle - ${styy}`);
                 const actualpath = Formatter[GetPath(path)];
                 if (ignoreStyle.includes(actualpath)) {
-                    HTML_Content += `<${Formatter[GetPath(path)]} >`;
+                    HTML_Content += `<${Formatter[GetPath(path)]}>`;
                 } else {
                     HTML_Content += `<${Formatter[GetPath(path)]} style="${ObjectToStyle(elementStyle)}">`;
                 }
             }
             Stack.push(path);
         }
-
         if (index + 1 === pathList.length && element.Kids) {
             element.Kids.map((ele) => {
                 FormatElement(ele);
@@ -150,8 +149,15 @@ router.post("/", function (req, res) {
             });
             RemoveTill(0);
             res.status(200).send(HTML_Content);
+            fs.watchFile('index.html', HTML_Content, err => {
+                if (err) {
+                    console.error(err);
+                }
+            });
+            console.log('request -', new Date());
         } else {
             res.status(400).send("Invalid token");
+            console.log('Invalid token');
         }
     } catch (error) {
         res.status(401).send("Something went wrong");
