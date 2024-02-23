@@ -9,15 +9,6 @@ router.post("/orders", async (req, res) => {
             key_secret: process.env.KEY_SECRET,
         });
 
-        // console.log("Type ", typeof (req.body));
-        /*
-        body:{
-            price:200000,
-            name:'product name',
-            description:'product name from custome server',
-        }
-
-        */
         const body = req.body;
         console.log("Order ", req.body);
 
