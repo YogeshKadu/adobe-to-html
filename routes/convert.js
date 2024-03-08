@@ -40,7 +40,15 @@ const styleFormatter = {
     TextDecorationType: "text-decoration:REPLACEME;",
     TextAlign: "text-align:REPLACEME;",
     Placement: "display:REPLACEME;",
+    italic:"font-style:italic;",
+    TextPosition:"font-size:0.8rem;position: relative;",
+    TextDecorationType:"text-decoration:REPLACEME",
 };
+const ValueToStyle={
+    Sup:"font-size:0.8rem;position: relative;bottom:0.5rem",
+    Sub:"font-size:0.8rem;position: relative;top:0.5rem"
+}
+
 const Stack = [];
 let HTML_Content = "";
 
@@ -54,20 +62,22 @@ const RemoveTill = (index) => {
     while (Stack.length > index) {
         const lastElement = Stack.pop();
         const fot = Formatter[GetPath(lastElement)]
-        // console.log("lastElement Stack fot -> ", lastElement, '\t', Stack, '\t', fot);
         if (fot) {
-            // console.log(fot);
             HTML_Content += `</${Formatter[GetPath(lastElement)]}>`;
         }
-        // HTML_Content += `</${fot}>`;
     }
 };
 const ObjectToStyle = (elementStyleObject) => {
     let styleText = "";
     const keyList = Object.keys(elementStyleObject);
     keyList.map((key) => {
-        if (styleFormatter[key]) {
-            styleText += styleFormatter[key].replace("REPLACEME", elementStyleObject[key]);
+        if (styleFormatter[key] && elementStyleObject[key]) {
+            if(ValueToStyle[elementStyleObject[key]]){
+                styleText += ValueToStyle[elementStyleObject[key]];
+            }else{
+                styleText += styleFormatter[key].replace("REPLACEME", elementStyleObject[key]);
+            }
+            console.log(styleFormatter[key]);
         }
     });
     return styleText.toLowerCase();

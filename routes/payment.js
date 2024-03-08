@@ -48,6 +48,7 @@ router.post("/verify", async (req, res) => {
             .update(sign.toString())
             .digest("hex");
 
+        console.log(razorpay_signature === expectedSign)
         if (razorpay_signature === expectedSign) {
             return res.status(200).json({ message: "Payment verified successfully" });
         } else {

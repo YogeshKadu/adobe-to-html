@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //#region Start JSONData
+        const Formatter = {
+            Document: "section",
+            Sect: "section",
+            Aside: "aside",
+            Figure: "figure",
+            Footnote: "footer",
+            H1: "h1",
+            H2: "h2",
+            H3: "h3",
+            H4: "h4",
+            H5: "h5",
+            H6: "h6",
+            P: "p",
+            Reference: "a",
+            ParagraphSpan: "p",
+            StyleSpan: "span",
+            Sub: "span",
+            Span: "span",
+            Table: "table",
+            TD: "td",
+            TH: "th",
+            TR: "tr",
+            Title: "h1",
+            L: "ul",
+            LI: "li",
+            LBody: "",
+            HyphenSpan: "span",
+            Div: "div",
+        };
+
+        const skipTagBody = ["LBody"];
+        const ignoreTags = ["Watermark", "Lbl"];
+        const ignoreStyle = ["section"];
+        const styleFormatter = {
+            weight: "font-weight:REPLACEME;",
+            SpaceAfter: "margin-bottom:REPLACEMEpx;",
+            TextDecorationType: "text-decoration:REPLACEME;",
+            TextAlign: "text-align:REPLACEME;",
+            Placement: "display:REPLACEME;",
+            italic:"font-style:italic;",
+            Sub:"ont-size:.8rem;position: relative;top:5px;",
+            Sup:"ont-size:.8rem;position: relative;bottom:5px;",
+            TextDecorationType:"text-decoration:REPLACEME",
+        };
+        const Stack = [];
+        let HTML_Content = "";
+
+        const GetPathArray = (pathString) => {
+            return pathString.split("/").splice(2);
+        };
+        const GetPath = (path) => {
+            return path.split("[")[0];
+        };
+        const GetTag = (element,path) => {
+            let alternative = Formatter[path];
+            return alternative;
+        }
+        const RemoveTill = (index) => {
+            while (Stack.length > index) {
+                const lastElement = Stack.pop();
+                const fot = Formatter[GetPath(lastElement)]
+                if (fot) {
+                    HTML_Content += `</${Formatter[GetPath(lastElement)]}>`;
+                }
+            }
+        };
+        const ObjectToStyle = (elementStyleObject) => {
+            let styleText = "";
+            const keyList = Object.keys(elementStyleObject);
+            keyList.map((key) => {
+                if (styleFormatter[key]) {
+                    styleText += styleFormatter[key].replace("REPLACEME", elementStyleObject[key].toLowerCase());
+                }
+            });
+            return styleText.toLowerCase();
+        };
+        const FormatElement = (element) => {
+            const pathList = GetPathArray(element.Path);
+            pathList.map((path, index) => {
+                if (ignoreTags.includes(path) || (!element.Text && !element.Kids))
+                    return;
+
+                const elementStyle = { ...element.Font, ...element.attributes };
+                // Remove element
+                if (Stack[index] !== path || (index + 1 === pathList.length && Stack.length > index)) {
+                    if (Stack[index] !== path) {
+                        RemoveTill(index);
+                    } else {
+                        RemoveTill(index + 1);
+                    }
+                }
+
+                // Insert new element
+                if (Stack.length <= 0 || Stack.length <= index) {
+                    if (!skipTagBody.includes(GetPath(path))) {
+                        // const actualpath = Formatter[GetPath(path)];
+                        const actualpath = GetTag(element,GetPath(path),elementStyle);
+                        if (ignoreStyle.includes(actualpath)) {
+                            HTML_Content += `<${actualpath}>`;
+                        } else {
+                            HTML_Content += `<${actualpath} style="${ObjectToStyle(elementStyle)}">`;
+                        }
+                    }
+                    Stack.push(path);
+                }
+                if (index + 1 === pathList.length && element.Kids) {
+                    element.Kids.map((ele) => {
+                        FormatElement(ele);
+                    });
+                }
+            });
+            if (!ignoreTags.includes(GetPath(pathList[pathList.length - 1])) && element.Text) {
+                HTML_Content += element.Text;
+            }
+        };
+    </script>
+</body>
+
+</html>
