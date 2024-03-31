@@ -1,4 +1,3 @@
-// pdf.artify.in
 const router = require("express").Router();
 const fs = require("fs");
 
@@ -66,6 +65,9 @@ const RemoveTill = (index) => {
     if (TagInFormator) {
       HTML_Content += `</${TagInFormator}>`;
     }
+    // else{
+    //     console.log('Not found', lastElement);
+    // }
   }
 };
 const ObjectToStyle = (elementStyleObject) => {
@@ -131,46 +133,13 @@ const FormatElement = (element) => {
   }
 };
 
-router.use("*", (req, res, next) => {
-  // Modify the response body or perform any other actions
-  console.log(`Intercepted JSON: ${req.method} ${req.url}`);
-
-  let host = req.headers['x-rapidapi-host']
-  let token = req.headers['authkey']
-  console.log(req.headers);
-  if (host == "rapid-response.p.rapidapi.com" && token === "dd0baf31-a872-4952-9adc-0014ba739909") {
-    next();
-  } else {
-    res.status(400).json({
-      error: "💔 Token missing.."
-    })
-  }
-});
-
 //#endregion Start JSONData
 router.post("/", function (req, res) {
   HTML_Content = "";
-  // Footnotes.splice(0,Footnotes.length);
 
   const { token, data } = req.body;
   try {
-    if (token === 123) {
-      console.log(new Date());
-      data.elements.map((element) => {
-        FormatElement(element);
-      });
-      RemoveTill(0);
-      res
-        .status(200)
-        .send(
-          HTML_Content.replace("“", '"')
-            .replace("”", '"')
-            .replace("‘", "'")
-            .replace("’", "'")
-        );
-    } else {
-      res.status(400).send("Invalid token");
-    }
+    
   } catch (error) {
     res.status(401).json({ message: "Something went wrong", error: error });
   }
