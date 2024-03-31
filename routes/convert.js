@@ -138,13 +138,13 @@ router.use("*", (req, res, next) => {
   let host = req.headers['x-rapidapi-host']
   let token = req.headers['authkey']
   console.log(req.headers);
-  if (host == "rapid-response.p.rapidapi.com" && token === "dd0baf31-a872-4952-9adc-0014ba739909") {
+  // if (host == "rapid-response.p.rapidapi.com" && token === "dd0baf31-a872-4952-9adc-0014ba739909") {
     next();
-  } else {
-    res.status(400).json({
-      error: "💔 Token missing.."
-    })
-  }
+  // } else {
+  //   res.status(400).json({
+  //     error: "💔 Token missing.."
+  //   })
+  // }
 });
 
 //#endregion Start JSONData
